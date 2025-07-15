@@ -23,13 +23,22 @@ No modules.
 
 | Name | Type |
 |------|------|
+| [aws_eip.eip_1a](https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/eip) | resource |
 | [aws_internet_gateway.igw](https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/internet_gateway) | resource |
+| [aws_nat_gateway.ngw_1a](https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/nat_gateway) | resource |
 | [aws_route_table.rt-public](https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/route_table) | resource |
+| [aws_route_table.rt_private_app](https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/route_table) | resource |
+| [aws_route_table_association.rtb_assoc_priv_1a](https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/route_table_association) | resource |
+| [aws_route_table_association.rtb_assoc_priv_1b](https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/route_table_association) | resource |
 | [aws_route_table_association.rtb_assoc_pub_1a](https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/route_table_association) | resource |
 | [aws_route_table_association.rtb_assoc_pub_1b](https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/route_table_association) | resource |
+| [aws_subnet.sub_private_app_1a](https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/subnet) | resource |
+| [aws_subnet.sub_private_app_1b](https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/subnet) | resource |
 | [aws_subnet.sub_public_alb_1a](https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/subnet) | resource |
 | [aws_subnet.sub_public_alb_1b](https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/subnet) | resource |
 | [aws_vpc.vpc-basic](https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/vpc) | resource |
+| [aws_vpc_endpoint.dynamodb](https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/vpc_endpoint) | resource |
+| [aws_vpc_endpoint.s3](https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/vpc_endpoint) | resource |
 | [aws_caller_identity.current](https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/caller_identity) | data source |
 | [aws_region.current](https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/region) | data source |
 
