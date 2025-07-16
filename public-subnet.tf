@@ -7,7 +7,7 @@ resource "aws_subnet" "sub_public_alb_1a" {
   tags = merge(
     local.tags,
     {
-      Name = "${var.project_name}-Subnet-ALB-1a"
+      Name = "${var.project_name}-Sub-Public-ALB-1a"
     }
   )
 }
@@ -21,7 +21,7 @@ resource "aws_subnet" "sub_public_alb_1b" {
   tags = merge(
     local.tags,
     {
-      Name = "${var.project_name}-Subnet-ALB-1b"
+      Name = "${var.project_name}-Sub-Public-ALB-1b"
     }
   )
 }

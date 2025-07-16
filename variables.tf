@@ -1,7 +1,7 @@
 variable "project_name" {
   type        = string
   description = ""
-  default     = "AWS-VPC"
+  default     = "AWS-NET-BASIC"
 }
 variable "cidr_block" {
   type        = string

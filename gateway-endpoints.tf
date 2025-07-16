@@ -1,7 +1,7 @@
 #################### S3 Gateway Endpoint ####################
 resource "aws_vpc_endpoint" "s3" {
   vpc_id            = aws_vpc.vpc-basic.id
-  service_name      = "com.amazonaws.sa-east-1.s3"
+  service_name      = "com.amazonaws.us-east-1.s3"
   route_table_ids   = [aws_route_table.rt_private_app.id]
   vpc_endpoint_type = "Gateway"
 
@@ -30,7 +30,7 @@ POLICY
 #################### Dynamodb Gateway Endpoint ####################
 resource "aws_vpc_endpoint" "dynamodb" {
   vpc_id            = aws_vpc.vpc-basic.id
-  service_name      = "com.amazonaws.sa-east-1.dynamodb"
+  service_name      = "com.amazonaws.us-east-1.dynamodb"
   route_table_ids   = [aws_route_table.rt_private_app.id]
   vpc_endpoint_type = "Gateway"
 
