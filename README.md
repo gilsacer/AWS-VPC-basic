@@ -1,6 +1,8 @@
 # AWS-VPC-basic
 AWS VPC with basic resources
 
+<img src="AWS-VPC-basic.png" width="500">
+
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
@@ -24,8 +26,10 @@ No modules.
 | Name | Type |
 |------|------|
 | [aws_eip.eip_1a](https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/eip) | resource |
+| [aws_eip.ngw_eip_1b](https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/eip) | resource |
 | [aws_internet_gateway.igw](https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/internet_gateway) | resource |
 | [aws_nat_gateway.ngw_1a](https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/nat_gateway) | resource |
+| [aws_nat_gateway.ngw_1b](https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/nat_gateway) | resource |
 | [aws_route_table.rt-public](https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/route_table) | resource |
 | [aws_route_table.rt_private_app](https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/route_table) | resource |
 | [aws_route_table.rt_private_db](https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/route_table) | resource |

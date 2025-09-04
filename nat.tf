@@ -9,7 +9,7 @@ resource "aws_eip" "eip_1a" {
   )
 }
 
-/* resource "aws_eip" "ngw_eip_1b" {
+resource "aws_eip" "ngw_eip_1b" {
   domain = "vpc"
 
   tags = merge(
@@ -18,7 +18,7 @@ resource "aws_eip" "eip_1a" {
       Name = "${var.project_name}-eip-1b"
     }
   )
-} */
+}
 
 resource "aws_nat_gateway" "ngw_1a" {
   allocation_id = aws_eip.eip_1a.id
@@ -32,7 +32,7 @@ resource "aws_nat_gateway" "ngw_1a" {
   )
 }
 
-/* resource "aws_nat_gateway" "ngw_1b" {
+resource "aws_nat_gateway" "ngw_1b" {
   allocation_id = aws_eip.ngw_eip_1b.id
   subnet_id     = aws_subnet.pvt_d.id
 
@@ -42,4 +42,4 @@ resource "aws_nat_gateway" "ngw_1a" {
       Name = "${var.project_name}-ngw-1b"
     }
   )
-} */
+}
