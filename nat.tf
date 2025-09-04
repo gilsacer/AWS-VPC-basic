@@ -34,7 +34,7 @@ resource "aws_nat_gateway" "ngw_1a" {
 
 resource "aws_nat_gateway" "ngw_1b" {
   allocation_id = aws_eip.ngw_eip_1b.id
-  subnet_id     = aws_subnet.pvt_d.id
+  subnet_id     = aws_subnet.sub_public_alb_1b.id
 
   tags = merge(
     local.tags,
