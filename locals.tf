@@ -1,10 +1,10 @@
 locals {
   tags = {
     Project   = "AWS-NET-BASIC"
-    CreatedAt = "2025-09-04"
+    CreatedAt = "2026-02-24"
     ManagedBy = "Terraform"
     Owner     = "Infra-IAC"
     Env       = "Dev"
-    Owner     = "Gilson Pires"
+    Owner     = "Team Network BSP"
   }
 }
