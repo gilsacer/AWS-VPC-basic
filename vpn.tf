@@ -1,6 +1,6 @@
 ## CGW - IP Public - Client - vivo
 resource "aws_customer_gateway" "vpn_vivo" {
-  bgp_asn    = var.customer_asn
+  bgp_asn    = var.customer_asn_vivo
   ip_address = var.customer_ip_vivo
   type       = "ipsec.1"
 
@@ -13,7 +13,7 @@ resource "aws_customer_gateway" "vpn_vivo" {
 }
 ## CGW - IP Public - Client - Mundivox
 resource "aws_customer_gateway" "vpn_mundivox" {
-  bgp_asn    = var.customer_asn
+  bgp_asn    = var.customer_asn_mundivox
   ip_address = var.customer_ip_mundivox
   type       = "ipsec.1"
 
