@@ -24,7 +24,12 @@ variable "private_subnets" {
   default = ["100.64.0.0/24"]
 }
 
-variable "customer_asn" {
+variable "customer_asn_vivo" {
+  type    = string
+  default = "65000"
+}
+
+variable "customer_asn_mundivox" {
   type    = string
   default = "65001"
 }
